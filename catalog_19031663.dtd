@@ -1,0 +1,41 @@
+<!ELEMENT Stores (store+,Songs+)>
+<!ELEMENT store (storeName,storeAddress,storeTelephone_Number,storeWebsite,storeEmailAddress,storeLogo)>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT storeAddress (#PCDATA)>
+<!ELEMENT storeTelephone_Number (#PCDATA)>
+<!ELEMENT storeWebsite (#PCDATA)>
+<!ELEMENT storeEmailAddress (#PCDATA)>
+<!ELEMENT storeLogo EMPTY>
+<!ELEMENT Songs (Director+,Writer+,Producer+,Singer+,Musician+)>
+<!ELEMENT Director (directorName,directorAddress?)>
+<!ELEMENT directorName (#PCDATA)>
+<!ELEMENT directorAddress (#PCDATA)>
+<!ELEMENT Writer (writerName,writerAddress?)>
+<!ELEMENT writerName (#PCDATA)>
+<!ELEMENT writerAddress (#PCDATA)>
+<!ELEMENT Producer (producerName+,producerAddress)>
+<!ELEMENT producerAddress (#PCDATA)>
+<!ELEMENT producerName (producerFirst_Name,producerLast_Name)>
+<!ELEMENT producerFirst_Name (#PCDATA)>
+<!ELEMENT producerLast_Name (#PCDATA)>
+<!ELEMENT Singer (singerName+,singerPhone_Number?,singerAddress,singerNationality?,singerDOB?,singerManager?)>
+<!ELEMENT singerPhone_Number (#PCDATA)>
+<!ELEMENT singerAddress (#PCDATA)>
+<!ELEMENT singerNationality (#PCDATA)>
+<!ELEMENT singerDOB (#PCDATA)>
+<!ELEMENT singerManager (#PCDATA)>
+<!ELEMENT singerName (singerFirst_Name,singerLast_Name)>
+<!ELEMENT singerFirst_Name (#PCDATA)>
+<!ELEMENT singerLast_Name (#PCDATA)>
+<!ELEMENT Musician (musicianName)>
+<!ELEMENT musicianName (#PCDATA)>
+<!ATTLIST store StoreID ID #REQUIRED>
+<!ATTLIST Songs SongID ID #REQUIRED>
+<!ATTLIST Songs songsGenre CDATA #REQUIRED>
+<!ATTLIST Songs songPrice CDATA #REQUIRED>
+<!ATTLIST Songs songRelaseYear CDATA #REQUIRED>
+<!ATTLIST Songs songName CDATA #REQUIRED>
+<!ATTLIST producerName nameID ID #REQUIRED>
+<!ATTLIST singerName nameID ID #REQUIRED>
+<!ATTLIST xsi:Stores
+xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance">
