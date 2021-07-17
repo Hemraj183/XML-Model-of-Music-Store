@@ -1,0 +1,76 @@
+Stores {display: block; width: auto; margin: auto; background-color: #7DC9F5;
+            padding-bottom: auto;
+        }
+
+store{
+	display: block;
+
+}
+storeName{
+	display: block;
+	font-family: Arial,Sans-serif;
+	font-size: 50px;
+	color: rgb(37,9,236);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 450px;
+}
+storeAddress, storeEmailAddress, storeWebsite, storeTelephone_Number{
+	display: block;
+	font-family: Verdana,Sans-serif;
+	font-size: 25px;
+	color: rgb(238, 64, 166);
+	margin-left: 500px; 
+}
+
+storeLogo{
+	display: block;
+	content: url("logo.jpg");
+			max-width: 100%;
+  			height: 200px;
+  			margin-left:10px;
+  			margin-top: -190px;
+  			margin-bottom: 50px;
+  			border-radius: 10%
+}
+Songs{
+	background-color: #D4BCDE;
+	display: list-item;
+	list-style-type: none;
+	float: left;
+    width: 420px;
+    height: 400px;
+    margin: 40px;
+    border: 3px solid #F90B16;
+    border-radius: 20%;
+}
+
+singerDOB,singerManager,Producer,Singer,Musician,singerNationality,singerAddress,singerPhone_Number,singerName,Director{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	font-family: Verdana,Sans-serif;
+	font-size: 20px;
+	color: rgb(177, 11, 249);
+
+}
+Writer{
+	display: list-item;
+	list-style-type: none;
+	text-align: center;
+	padding: 5px;
+	font-family: Verdana,Sans-serif;
+	font-size: 20px;
+	color: rgb(177, 11, 249);
+
+}
+
+Songs:before {
+  content:attr(songName) ' ' attr(songsGenre) ' ' attr(songPrice) ' '  attr(songRelaseYear);
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-family: Verdana,Sans-serif;
+  font-size: 20px;
+  color: rgb(177, 11, 249);
+}
