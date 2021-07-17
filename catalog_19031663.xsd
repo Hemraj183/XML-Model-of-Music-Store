@@ -1,0 +1,102 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Stores" type="StoresType"/>
+  <xs:complexType name="storeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="storeName"/>
+      <xs:element type="xs:string" name="storeAddress"/>
+      <xs:element type="valid_number" name="storeTelephone_Number"/>
+      <xs:element type="xs:anyURI" name="storeWebsite"/>
+      <xs:element type="xs:string" name="storeEmailAddress"/>
+      <xs:element type="xs:string" name="storeLogo"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="StoreID"/>
+  </xs:complexType>
+  <xs:complexType name="DirectorType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="directorName"/>
+      <xs:element type="xs:string" name="directorAddress" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WriterType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="writerName"/>
+      <xs:element type="xs:string" name="writerAddress" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="producerNameType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="producerFirst_Name"/>
+      <xs:element type="xs:string" name="producerLast_Name"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="nameID" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ProducerType">
+    <xs:sequence>
+      <xs:element type="producerNameType" name="producerName"/>
+      <xs:element type="xs:string" name="producerAddress"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="singerNameType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="singerFirst_Name"/>
+      <xs:element type="xs:string" name="singerLast_Name"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="nameID" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="SingerType">
+    <xs:sequence>
+      <xs:element type="singerNameType" name="singerName"/>
+      <xs:element type="validate_singer_number" name="singerPhone_Number" minOccurs="0"/>
+      <xs:element type="xs:string" name="singerAddress"/>
+      <xs:element type="xs:string" name="singerNationality" minOccurs="0"/>
+      <xs:element type="date_validation" name="singerDOB" minOccurs="0"/>
+      <xs:element type="xs:string" name="singerManager" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MusicianType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="musicianName"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SongsType">
+    <xs:sequence>
+      <xs:element type="DirectorType" name="Director"/>
+      <xs:element type="WriterType" name="Writer"/>
+      <xs:element type="ProducerType" name="Producer"/>
+      <xs:element type="SingerType" name="Singer"/>
+      <xs:element type="MusicianType" name="Musician"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="SongID" use="optional"/>
+    <xs:attribute type="xs:string" name="songsGenre" use="optional"/>
+    <xs:attribute type="xs:string" name="songPrice" use="optional"/>
+    <xs:attribute type="xs:string" name="songRelaseYear" use="optional"/>
+    <xs:attribute type="xs:string" name="songName" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="StoresType">
+    <xs:sequence>
+      <xs:element type="storeType" name="store"/>
+      <xs:element type="SongsType" name="Songs" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="valid_number">
+    <xs:restriction base="xs:string">
+    <xs:pattern value="021\ [0-9]{6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+   <xs:simpleType name="date_validation">
+    <xs:restriction base="xs:short">
+    <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="validate_singer_number">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="9"/>
+      <xs:maxLength value="16"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+ 
