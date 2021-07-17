@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type ="text/css" href ="catalog_19031663.css"?>
+<!--<!DOCTYPE Stores SYSTEM "catalog_19031663.dtd">-->
+<Stores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031663.xsd">
+	<store StoreID="a100">
+		<storeName>Biratnagar Music Store</storeName>
+		<storeAddress>Biratnagar 11 Roadses, Morang </storeAddress>
+		<storeTelephone_Number>021 625645</storeTelephone_Number>
+		<storeWebsite>www.brtmusic.com.np</storeWebsite>
+		<storeEmailAddress>brtmusic@gmail.com </storeEmailAddress>
+		<storeLogo></storeLogo>
+
+	</store>
+
+	<Songs SongID="a1" songsGenre="Pop" songPrice = "500" songRelaseYear="2017" songName="'Perfect'">
+		<Director>
+			<directorName>Jason Koenig</directorName>
+			<directorAddress>Seattle,USA</directorAddress>
+		</Director>
+
+		<Writer>
+			<writerName>Ed Sheeren</writerName>
+			<writerAddress>Beverly Hills, CA , USA</writerAddress>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "a2">
+				<producerFirst_Name>Will</producerFirst_Name>
+				<producerLast_Name>Hicks</producerLast_Name>
+			</producerName>
+			<producerAddress>Texas,United States</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "a3">
+				<singerFirst_Name> Ed </singerFirst_Name>
+				<singerLast_Name>Sheeren</singerLast_Name>
+			</singerName>
+			<singerPhone_Number>310 288 8000</singerPhone_Number>
+			<singerAddress>Beverly Hills, CA , USA</singerAddress>
+			<singerNationality>English</singerNationality>
+			<singerDOB>1991</singerDOB>
+			<singerManager>Stuart Camp</singerManager>
+		</Singer>
+
+		<Musician>
+			<musicianName>Ed Sheeren</musicianName>
+		</Musician>
+	</Songs>
+
+	<Songs SongID = "b1" songsGenre = "Jazz" songPrice = "200" songRelaseYear = "1959" songName = "'So What'">
+		<Director>
+			<directorName>Jack Smight</directorName>
+			<directorAddress>Los Angeles, California</directorAddress>
+		</Director>
+
+		<Writer>
+			<writerName>Miles Davis</writerName>
+			<writerAddress>Santa Monica, California</writerAddress>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "b2">
+				<producerFirst_Name>Teo</producerFirst_Name>
+				<producerLast_Name>Macero</producerLast_Name>
+			</producerName>
+			<producerAddress>New York, USA</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "b3">
+				<singerFirst_Name>Miles</singerFirst_Name>
+				<singerLast_Name>Davis</singerLast_Name>
+			</singerName>
+			<singerAddress>Santa Monica, California</singerAddress>
+			<singerNationality>Americian</singerNationality>
+			<singerDOB>1926</singerDOB>
+		</Singer>
+
+		<Musician>
+			<musicianName>Miles Davis</musicianName>
+		</Musician>
+	</Songs>
+
+
+	<Songs SongID = "c1" songsGenre = "Country" songPrice = "400" songRelaseYear = "2020" songName = "'Made For You'">
+		<Director>
+			<directorName>Jake Owen</directorName>
+		</Director>
+
+		<Writer>
+			<writerName>Benjy Davis, Joey Hyde, Neil Medley</writerName>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "c2">
+				<producerFirst_Name>Joey</producerFirst_Name>
+				<producerLast_Name>Moi</producerLast_Name>
+			</producerName>
+			<producerAddress>Tennessee, United States</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "c3">
+				<singerFirst_Name>Jake</singerFirst_Name>
+				<singerLast_Name>Owen</singerLast_Name>
+			</singerName>
+			<singerPhone_Number>212 64 50555</singerPhone_Number>
+			<singerAddress>Nashville, USA</singerAddress>
+			<singerNationality>American</singerNationality>
+			<singerDOB>1981</singerDOB>
+			<singerManager>Keith Gale</singerManager>
+			
+		</Singer>
+
+		<Musician>
+			<musicianName>Jake Owen</musicianName>
+		</Musician>
+	</Songs>
+
+	<Songs SongID = "d1" songsGenre = "Rock" songPrice = "300" songRelaseYear = "1975" songName = "'Kashmir'">
+		<Director>
+			<directorName>Led Zeppelin</directorName>
+			<directorAddress>New York, USA</directorAddress>
+		</Director>
+
+		<Writer>
+			<writerName>John Bonham, Robert Plant, Jimmy Page</writerName>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "d2">
+				<producerFirst_Name>Jimmy</producerFirst_Name>
+				<producerLast_Name>Page</producerLast_Name>
+			</producerName>
+			<producerAddress>Royal_Borough, UK</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "d3">
+				<singerFirst_Name>Lec</singerFirst_Name>
+				<singerLast_Name>Zeppelin</singerLast_Name>
+			</singerName>
+			<singerAddress>New York, USA</singerAddress>
+			<singerNationality>English</singerNationality>
+		</Singer>
+
+		<Musician>
+			<musicianName>Led Zeppelin</musicianName>
+		</Musician>
+	</Songs>
+	<Songs SongID = "e1" songsGenre = "Dubstep" songPrice = "450" songRelaseYear = "2011" songName = "'Cinema'">
+		<Director>
+			<directorName>Benny Benassi</directorName>
+			<directorAddress>paul@spaceship.it</directorAddress>
+		</Director>
+
+		<Writer>
+			<writerName>Benny Benassi, Alle Benassi, Gary Baker</writerName>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "e2">
+				<producerFirst_Name>Marco "Benny"</producerFirst_Name>
+				<producerLast_Name>Benassi</producerLast_Name>
+			</producerName>
+			<producerAddress>paul@spaceship.it</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "e3">
+				<singerFirst_Name>Gary</singerFirst_Name>
+				<singerLast_Name>Go</singerLast_Name>
+			</singerName>
+			<singerAddress>hi@canvasroom.co</singerAddress>
+		</Singer>
+
+		<Musician>
+			<musicianName>Benny Benassi</musicianName>
+		</Musician>
+	</Songs>
+
+		<Songs SongID="f1" songsGenre="Pop" songPrice = "100" songRelaseYear="2018" songName="'Jaan Nisaar'">
+		<Director>
+			<directorName>Mukesh Chhabra</directorName>
+			<directorAddress>Mumbai, India</directorAddress>
+		</Director>
+
+		<Writer>
+			<writerName>Amitabh Bhattacharya</writerName>
+			<writerAddress>West Bengal, India</writerAddress>
+		</Writer>
+
+		<Producer>
+			<producerName nameID = "f2">
+				<producerFirst_Name>Zee Music Company</producerFirst_Name>
+				<producerLast_Name>India</producerLast_Name>
+			</producerName>
+			<producerAddress>Mumbai, India</producerAddress>
+		</Producer>
+
+		<Singer>
+			<singerName nameID = "f3">
+				<singerFirst_Name>Arijit</singerFirst_Name>
+				<singerLast_Name>Singh</singerLast_Name>
+			</singerName>
+			<singerPhone_Number>+91-22-26358498</singerPhone_Number>
+			<singerAddress>Mumbai, India</singerAddress>
+			<singerNationality>Indian</singerNationality>
+		</Singer>
+
+		<Musician>
+			<musicianName>Amit Trivedi</musicianName>
+		</Musician>
+	</Songs>
+
+</Stores> 
